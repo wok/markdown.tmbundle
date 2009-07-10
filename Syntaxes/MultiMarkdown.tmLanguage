@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>fileTypes</key>
+	<array>
+		<string>md</string>
+		<string>markdown</string>
+		<string>mdown</string>
+		<string>markdn</string>
+	</array>
 	<key>firstLineMatch</key>
-	<string>^Format:\s*(?i:complete)\s*$</string>
+	<string>^\S.*?:\s*\S.*?\s*$</string>
 	<key>foldingStartMarker</key>
 	<string>(?x)
 		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)\b.*?&gt;
@@ -24,18 +31,13 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>^([A-Za-z0-9]+)(:)\s*</string>
+			<string>^([A-Za-z0-9][A-Za-z0-9 ]*):\s*</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>keyword.other.multimarkdown</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.separator.key-value.multimarkdown</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -65,6 +67,123 @@
 			<string>meta.content.multimarkdown</string>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>begin</key>
+					<string>^[ ]{0,3}\[\^(.+?)\]:[ \t]*(.*?)$\n</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>constant.other.reference.footnote.multimarkdown</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>markup.footnote.multimarkdown</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>^$</string>
+					<key>name</key>
+					<string>meta.footnote.reference.def.multimarkdown</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>text.html.markdown</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>^[ ]{0,3}\[\#(.+?)\]:[ \t]*(.*?)$\n</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>constant.other.reference.citation.multimarkdown</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>markup.citation.multimarkdown</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>^$</string>
+					<key>name</key>
+					<string>meta.citation.reference.def.multimarkdown</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\[\#.*\]</string>
+					<key>name</key>
+					<string>meta.citation.reference.literal.multimarkdown</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>constant.other.reference.link.markdown</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>markup.underline.link.markdown</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>string.other.link.description.title.markdown</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>string.other.link.description.attributes.markdown</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(?x:
+						\s*						# Leading whitespace
+						\[(.+?)\]:				# Reference name
+						[ \t]*					# Optional whitespace
+						&lt;?(\S+?)&gt;?				# The url
+						[ \t]*					# Optional whitespace
+						(?:
+							["(](.+?)[")]		# Match title in quotes or parens
+							[ \t]*
+						)?						# Title is optional
+						(
+							(?&lt;=\s)				# Match attributes
+							(([ \t]*\n)?[ \t]*	# Leading whitespace
+								(\S+=\S+)|(\S+=".*?")	# Match the attributes
+							)*
+						)?[ \t]*				# Attributes are optional
+						\s*						# Optional whitespace
+						$\n?
+					)</string>
+					<key>name</key>
+					<string>meta.link.reference.def.markdown</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>^([ ]{0,3})[^\s\*].*?\|.*|\[.*?\](\[.*?\])?[ \t]*$\n?</string>
+					<key>end</key>
+					<string>^(?!((.*\|.*)|\[.*\]|$))</string>
+					<key>name</key>
+					<string>markup.table.multimarkdown</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>text.html.markdown</string>
+						</dict>
+					</array>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>text.html.markdown</string>

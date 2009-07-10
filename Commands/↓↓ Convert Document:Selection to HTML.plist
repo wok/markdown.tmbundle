@@ -5,7 +5,16 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>InsertFormatHeader.rb|MultiMarkdown.pl|"${TM_SMARTYPANTS:-SmartyPants.pl}"</string>
+	<string># Process the MultiMarkdown document and display as XHTML source
+
+if [[ -f "$TM_FILEPATH" ]]; then
+  echo "&lt;base href='tm-file://${TM_FILEPATH// /%20}'&gt;"
+fi
+
+cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
+cd bin
+./mmd2XHTML.pl
+</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>

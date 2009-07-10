@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>contactEmailRot13</key>
@@ -17,6 +17,7 @@
 		<string>6A1D4980-B41C-11D9-95E7-000D93B6E43C</string>
 		<string>485F0ABF-7A7D-4432-8AB6-702414D6ADBD</string>
 		<string>4AB16529-60A5-4CE7-8E97-B0785CAF87C4</string>
+		<string>3BAE5ECF-9006-43D0-9AEB-28FAFE526840</string>
 	</array>
 	<key>description</key>
 	<string>&lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt; allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML. This bundle provides preview functionality, syntax highlighting, and several useful commands.</string>
@@ -29,6 +30,7 @@
 			<string>FE31CF79-5F04-4FB6-B5CE-70BC781FF8B5</string>
 			<string>------------------------------------</string>
 			<string>49B1C71D-A748-4F99-9503-95444E8FF7BE</string>
+			<string>B8AD0BAA-18C9-4BBA-8217-E915544812E6</string>
 			<string>------------------------------------</string>
 			<string>914B78B7-3C9E-4630-8BFC-665A358FB49B</string>
 			<string>------------------------------------</string>
@@ -64,9 +66,9 @@
 					<string>------------------------------------</string>
 					<string>9F73CBC1-E9C0-41A4-891F-B2879A1852F7</string>
 					<string>67EB96A4-4213-42C9-9C47-B886A4B8AC93</string>
-					<string>3BAE5ECF-9006-43D0-9AEB-28FAFE526840</string>
 					<string>DB5085DA-3E95-4020-8521-C9702168F160</string>
 					<string>D9118E94-4E23-4B75-88D7-6BFEBAA70D1B</string>
+					<string>------------------------------------</string>
 				</array>
 				<key>name</key>
 				<string>MultiMarkdown</string>
@@ -91,6 +93,16 @@
 				<key>name</key>
 				<string>Headings</string>
 			</dict>
+			<key>B8AD0BAA-18C9-4BBA-8217-E915544812E6</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>8D04C38E-0187-4E53-B100-AE096CBBB984</string>
+					<string>C96D5804-7FA5-4CFE-8ADC-6F2F53B0FF01</string>
+				</array>
+				<key>name</key>
+				<string>Metadata</string>
+			</dict>
 		</dict>
 	</dict>
 	<key>name</key>
@@ -104,7 +116,6 @@
 		<string>724FCFF6-CE6B-11D9-9C17-000A95C0F626</string>
 		<string>9F73CBC1-E9C0-41A4-891F-B2879A1852F7</string>
 		<string>67EB96A4-4213-42C9-9C47-B886A4B8AC93</string>
-		<string>3BAE5ECF-9006-43D0-9AEB-28FAFE526840</string>
 		<string>DB5085DA-3E95-4020-8521-C9702168F160</string>
 		<string>D9118E94-4E23-4B75-88D7-6BFEBAA70D1B</string>
 		<string>351451DE-C1A4-4A36-A563-99AF761D026B</string>
@@ -117,9 +128,15 @@
 		<string>39A74FF2-46EF-4178-9E3A-7D4DB3968E05</string>
 		<string>31614C02-1FED-4644-9518-2C2DEF0D7A2C</string>
 		<string>F56525A1-C879-4A7C-9584-4DB28AFC58C2</string>
+		<string>B4A1CDF4-8759-45D4-B6B6-6CB44356B633</string>
+		<string>442001A7-0503-46F3-96BF-4740E3BC2F16</string>
+		<string>AF23DB79-1CCB-47EA-87A6-6727524BBA9A</string>
+		<string>6AE91BD7-4E3B-49CD-B175-E52E76512176</string>
 		<string>DA157B9A-792F-11D9-A212-000D93B3A10E</string>
 		<string>DA18D8BE-792F-11D9-A212-000D93B3A10E</string>
 		<string>4405912F-4AD5-40F8-93B3-A63394036ACA</string>
+		<string>8D04C38E-0187-4E53-B100-AE096CBBB984</string>
+		<string>C96D5804-7FA5-4CFE-8ADC-6F2F53B0FF01</string>
 		<string>0A1D9874-B448-11D9-BD50-000D93B6E43C</string>
 		<string>F5E04BF4-69A9-45AE-9205-B3F3C2B00130</string>
 		<string>E23C5DD2-9A36-4B4A-9729-2A769A055B92</string>
@@ -127,7 +144,10 @@
 		<string>146B2643-D903-49A8-9586-BE9C509D65B1</string>
 		<string>C2DBC2F2-D859-4B35-A38E-244927A8447F</string>
 		<string>C02A37C1-E770-472F-A13E-358FF0C6AD89</string>
-		<string>F878D261-A73A-4A65-875C-F0E07E2C8181</string>
+		<string>6D74AB8C-1903-4EB5-B0B6-AF16527F131C</string>
+		<string>4A05D483-795D-4B71-8537-3417B8450AD8</string>
+		<string>48600DF2-8E98-40C0-9FBD-D9B50EE73633</string>
+		<string>7A27A176-318B-403F-9228-D40B55CC6E85</string>
 	</array>
 	<key>uuid</key>
 	<string>D99E8C0C-792F-11D9-A212-000D93B3A10E</string>

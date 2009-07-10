@@ -5,7 +5,15 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>MultiMarkdown.pl|"${TM_SMARTYPANTS:-SmartyPants.pl}" &gt; "${TM_DIRECTORY:-/tmp}"/output.html
+	<string># Process the MultiMarkdown document and open in browser
+
+if [[ -f "$TM_FILEPATH" ]]; then
+  echo "&lt;base href='tm-file://${TM_FILEPATH// /%20}'&gt;"
+fi
+
+cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
+cd bin
+./mmd2XHTML.pl &gt;  "${TM_DIRECTORY:-/tmp}"/output.html
 open "${TM_DIRECTORY:-/tmp}"/output.html</string>
 	<key>fallbackInput</key>
 	<string>document</string>

@@ -5,7 +5,12 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>InsertFormatHeader.rb|MultiMarkdown.pl|SmartyPants.pl|xsltproc -novalid -nonet "$TM_BUNDLE_SUPPORT/xhtml2article.xslt"  -</string>
+	<string># Process the MultiMarkdown document using the univeral approach
+# This defaults to memoir
+
+cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
+cd bin
+./mmd2LaTeX.pl</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>

@@ -5,12 +5,16 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string># first figure out a name for the result
+	<string># Process the MultiMarkdown document and convert to an RTF
+
+# first figure out a name for the result
 NAME="${TM_FILENAME:-untitled}"
 BASENAME="${NAME%.*}"
 DST="/tmp/$BASENAME"
 
-InsertFormatHeader.rb|MultiMarkdown.pl|SmartyPants.pl &gt;"$DST.html"
+cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
+cd bin
+./mmd2XHTML.pl &gt; "$DST.html"
 
 # textutil is included with Tiger
 require_cmd textutil
