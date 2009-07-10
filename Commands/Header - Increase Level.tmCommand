@@ -9,7 +9,7 @@
 
 $line = $ENV{'TM_CURRENT_LINE'};
 
-$line =~ s/^(#+)\s*(.*?)\s*(#+)?$/\#$1 $2 $1\#/;
+$line =~ s/^(#{1,5})#*\s*(.*?)\s*(#+)?$/\#$1 $2 $1\#/;
 
 $index = $ENV{'TM_LINE_INDEX'}+1;
 $line =~ s/^(.{$index})/$1\$0/;
