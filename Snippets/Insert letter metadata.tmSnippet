@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Title:				${1:Title}  
+Author:				${2:$TM_FULLNAME}  
+Date:				${3:`date "+%B %d, %Y"`}  
+Recipient:			${5:Recipient}  
+Recipient Address:	${6:Recipent Address}  
+LaTeX XSLT:			${7:fp-letterhead}  
+LaTeX XSLT off:		${8:fp-envelope}  
+Graphic Signature:	${9:false}  
+
+$0
+
+$TM_AUTHOR
+$TM_FULLNAME	</string>
+	<key>keyEquivalent</key>
+	<string>~@m</string>
+	<key>name</key>
+	<string>Insert letter metadata</string>
+	<key>uuid</key>
+	<string>C96D5804-7FA5-4CFE-8ADC-6F2F53B0FF01</string>
+</dict>
+</plist>
