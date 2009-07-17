@@ -9,9 +9,14 @@
 	<key>command</key>
 	<string># Process the MultiMarkdown document and display as a web page
 
+
+# This really should go after xml declaration, but
+# TM seems ok with it
+
 if [[ -f "$TM_FILEPATH" ]]; then
   echo "&lt;base href='tm-file://${TM_FILEPATH// /%20}'&gt;"
 fi
+
 
 cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
 cd bin
