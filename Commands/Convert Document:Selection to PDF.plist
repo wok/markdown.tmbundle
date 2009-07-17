@@ -8,12 +8,19 @@
 	<string># first figure out a name for the result
 NAME="${TM_FILENAME:-untitled}"
 BASENAME="${NAME%.*}"
-DST="/tmp/$BASENAME"
+DST="/tmp/TextMate/$BASENAME"
+
+mkdir /tmp/TextMate
+
+# Copy possible ancillary files
+cd ${TM_FILEPATH%/*}
+cp *.png *.bib *.gif *.jpg *.pdf /tmp/TextMate
 
 
 cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
 cd bin
 cat &gt; "$DST.txt"
+
 
 ./mmd2pDF.pl "$DST.txt"
 
