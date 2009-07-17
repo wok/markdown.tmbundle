@@ -6,6 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string># Process the MultiMarkdown document and convert to an RTF
+# This works, but is not ideal....
 
 # first figure out a name for the result
 NAME="${TM_FILENAME:-untitled}"
