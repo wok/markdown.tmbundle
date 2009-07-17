@@ -96,7 +96,7 @@ print $result;</string>
 	<key>output</key>
 	<string>replaceSelectedText</string>
 	<key>scope</key>
-	<string>markup.list</string>
+	<string>text.html.markdown markup.list</string>
 	<key>uuid</key>
 	<string>4D051505-F739-4A2F-AC49-649A4ABA4271</string>
 </dict>

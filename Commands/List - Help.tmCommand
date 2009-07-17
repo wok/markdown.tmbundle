@@ -26,7 +26,7 @@ Naturally, you can reconfigure this in the Bundle Editor..."</string>
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>scope</key>
-	<string>markup.list</string>
+	<string>text.html.markdown markup.list</string>
 	<key>uuid</key>
 	<string>8A9993E1-CA38-49B1-92D8-ADCA4CF9C4DD</string>
 </dict>

@@ -58,7 +58,7 @@ if ($left =~ /^(\s*(\*|\+|\-|\d+\.)\s*)\S+/) {
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
-	<string>markup.list</string>
+	<string>text.html.markdown markup.list</string>
 	<key>uuid</key>
 	<string>5C692A38-2045-42F7-973B-E5D0C2558B03</string>
 </dict>

@@ -31,7 +31,7 @@ print $line;</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
-	<string>markup.list</string>
+	<string>text.html.markdown markup.list</string>
 	<key>uuid</key>
 	<string>1E8299F1-916B-445B-BC6F-1D3657901BB5</string>
 </dict>
