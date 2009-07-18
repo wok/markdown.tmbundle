@@ -10,7 +10,9 @@ NAME="${TM_FILENAME:-untitled}"
 BASENAME="${NAME%.*}"
 DST="/tmp/TextMate/$BASENAME"
 
+if [ ! -d /tmp/TextMate ]; then
 mkdir /tmp/TextMate
+fi
 
 # Copy possible ancillary files
 cd ${TM_FILEPATH%/*}
