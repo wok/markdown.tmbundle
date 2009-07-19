@@ -12,7 +12,6 @@ Copyright:		${6:`date +%Y` $TM_FULLNAME}.
 				${7:This work is licensed under a Creative Commons License.  
 				http://creativecommons.org/licenses/by-sa/2.5/}
 Keywords:		$8
-XMP:			${9:CCAttributionShareAlike}  
 
 $0</string>
 	<key>keyEquivalent</key>
