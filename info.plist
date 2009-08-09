@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>contactEmailRot13</key>
-	<string>zfurrgf@juvgrsnyyf.bet</string>
+	<string>syrgpure@syrgpurecraarl.arg</string>
 	<key>contactName</key>
-	<string>Michael Sheets</string>
+	<string>Fletcher T. Penney</string>
 	<key>deleted</key>
 	<array>
 		<string>58434A58-85E8-11D9-9CD0-000D93B3A10E</string>
@@ -20,7 +20,7 @@
 		<string>3BAE5ECF-9006-43D0-9AEB-28FAFE526840</string>
 	</array>
 	<key>description</key>
-	<string>&lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt; allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML. This bundle provides preview functionality, syntax highlighting, and several useful commands.</string>
+	<string>&lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt; allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML. This bundle provides preview functionality, syntax highlighting, and several useful commands.  Improved support for &lt;a href="http://fletcherpenney.net/multimarkdown/"&gt;MultiMarkdown&lt;/a&gt; has been added.</string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
