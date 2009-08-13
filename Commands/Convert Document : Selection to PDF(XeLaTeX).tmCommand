@@ -15,7 +15,7 @@ mkdir /tmp/TextMate
 fi
 
 # Copy possible ancillary files
-cd ${TM_FILEPATH%/*}
+cd "${TM_FILEPATH%/*}"
 cp *.png *.bib *.gif *.jpg *.pdf /tmp/TextMate
 
 
