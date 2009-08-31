@@ -6,7 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string># Process the MultiMarkdown document and convert to an RTF
-# This works, but is not ideal....
+# Now uses hand crafted XSLT to generate better RTF output
 
 # first figure out a name for the result
 NAME="${TM_FILENAME:-untitled}"
@@ -15,13 +15,37 @@ DST="/tmp/$BASENAME"
 
 cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
 cd bin
-./mmd2XHTML.pl &gt; "$DST.html"
 
-# textutil is included with Tiger
-require_cmd textutil
-textutil -convert rtf -extension rtf -font Times -fontsize 11 "$DST.html"
+# Use the new, incomplete XSLT to generate properly coded RTF documents.
+# NOTE - ALL FEATURES ARE NOT COMPLETE YET!!!
 
-open -a TextEdit.app "$DST.rtf"
+./mmd2RTF.pl  &gt; "$DST.rtf"
+
+# Alternatively, use the old approach - use textutil to convert HTML to RTF.
+
+# ./multimarkdown2RTF.pl  &gt; "$DST.rtf"
+
+
+
+# Open RTF documents with the default application.  If you want to specify
+# a certain application to use, comment this and uncomment below, or write
+# your own command
+
+open "$DST.rtf"
+
+
+
+# Alternatively, uncomment this to open everything with NeoOffice
+
+# open -a NeoOffice.app "$DST.rtf"
+
+
+# TextEdit sucks. Don't use it.  Use something else.
+# If you have to use it, open your document in OpenOffice or NeoOffice first, 
+# edit slightly and resave it.  The results in TextEdit will be better,
+# though still not right.
+
+# open -a TextEdit.app "$DST.rtf"
 </string>
 	<key>fallbackInput</key>
 	<string>document</string>
