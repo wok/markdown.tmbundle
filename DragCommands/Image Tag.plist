@@ -22,6 +22,8 @@ echo -n "![\${1:$alt}]($file)"</string>
 		<string>JPG</string>
 		<string>gif</string>
 		<string>GIF</string>
+		<string>pdf</string>
+		<string>PDF</string>
 	</array>
 	<key>name</key>
 	<string>Insert Image Tag</string>
