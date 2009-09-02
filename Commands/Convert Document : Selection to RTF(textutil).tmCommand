@@ -24,7 +24,7 @@ cd bin
 # a certain application to use, comment this and uncomment below, or write
 # your own command
 
-open "$DST.rtf"
+# open "$DST.rtf"
 
 
 
@@ -38,7 +38,7 @@ open "$DST.rtf"
 # edit slightly and resave it.  The results in TextEdit will be better,
 # though still not right.
 
-# open -a TextEdit.app "$DST.rtf"
+ open -a TextEdit.app "$DST.rtf"
 </string>
 	<key>fallbackInput</key>
 	<string>document</string>
