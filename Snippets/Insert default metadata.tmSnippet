@@ -18,6 +18,10 @@ $0</string>
 	<string>~@m</string>
 	<key>name</key>
 	<string>Insert default metadata</string>
+	<key>scope</key>
+	<string>text.html.markdown</string>
+	<key>tabTrigger</key>
+	<string>meta</string>
 	<key>uuid</key>
 	<string>8D04C38E-0187-4E53-B100-AE096CBBB984</string>
 </dict>
