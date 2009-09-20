@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Autocomplete Anchors</string>
 	<key>scope</key>
-	<string>meta.link.reference.literal.markdown, meta.image.reference.markdown</string>
+	<string>meta.link.reference.markdown, meta.image.reference.markdown</string>
 	<key>settings</key>
 	<dict>
 		<key>completionCommand</key>
