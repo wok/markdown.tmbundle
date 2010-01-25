@@ -24,7 +24,7 @@ cd bin
 cat &gt; "$DST.txt"
 
 
-./mmd2pDF.pl "$DST.txt"
+./mmd2PDF.pl "$DST.txt"
 
 # open in the users PDF viewer (falling back on Preview)
 viewer=$(find_app "${TM_PDF_VIEWER:-Preview.app}")
