@@ -7,8 +7,9 @@
 	<key>command</key>
 	<string># Cleanup the spacing of MultiMarkdown tables in the selection
 
-cd ~/Library/Application\ Support/MultiMarkdown
-Utilities/table_cleanup.pl </string>
+"${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}/Utilities/table_cleanup.pl" 
+
+</string>
 	<key>fallbackInput</key>
 	<string>scope</string>
 	<key>input</key>
