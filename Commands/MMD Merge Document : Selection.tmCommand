@@ -15,10 +15,14 @@ cd "${TM_FILEPATH%/*}"
 </string>
 	<key>input</key>
 	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^M</string>
 	<key>name</key>
 	<string>MMD Merge Document / Selection</string>
 	<key>output</key>
 	<string>openAsNewDocument</string>
+	<key>scope</key>
+	<string>text.html.markdown.multimarkdown</string>
 	<key>uuid</key>
 	<string>CAC8BE7C-78DD-489B-97F8-2EF8D896F91C</string>
 </dict>

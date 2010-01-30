@@ -11,7 +11,7 @@ mkdir /tmp/TextMate
 
 cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
 cd bin
-./mmd2XHTML.pl &gt;&gt;  /tmp/TextMate/output.html
+./mmd2XHTML.pl &gt;  /tmp/TextMate/output.html
 open /tmp/TextMate/output.html</string>
 	<key>fallbackInput</key>
 	<string>document</string>
