@@ -18,9 +18,7 @@ if [[ -f "$TM_FILEPATH" ]]; then
 fi
 
 
-cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
-cd bin
-./mmd2XHTML.pl</string>
+multimarkdown</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>

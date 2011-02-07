@@ -8,9 +8,7 @@
 	<string># Process the MultiMarkdown document using the univeral approach
 # This defaults to memoir
 
-cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
-cd bin
-./mmd2LaTeX.pl</string>
+multimarkdown -t latex</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>

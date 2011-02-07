@@ -11,10 +11,7 @@ if [[ -f "$TM_FILEPATH" ]]; then
   echo "&lt;base href='tm-file://${TM_FILEPATH// /%20}'&gt;"
 fi
 
-cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
-cd bin
-./mmd2XHTML.pl
-</string>
+multimarkdown</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
