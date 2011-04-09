@@ -22,7 +22,7 @@ open $TEMPFILE
 	<key>name</key>
 	<string>Convert Document / Selection to ODF</string>
 	<key>output</key>
-	<string>discard</string>
+	<string>showAsTooltip</string>
 	<key>scope</key>
 	<string>text.html.markdown.multimarkdown</string>
 	<key>uuid</key>
