@@ -38,6 +38,9 @@ page.  If you  use  this, you  should  probably also  set  the TextMate  Shell
 Variable `TM_MULTIMARKDOWN_PATH` to match  your installation directory --- for
 example, `/Users/yourname/Library/Application Support/MultiMarkdown`.
 
+If you are using MultiMarkdown 3.0, you probably need to add `/usr/local/bin`
+to your `PATH` variable in the TextMate preferences.
+
 You can also install my MultiMarkdown TextMate [theme] as well.
 
 
@@ -63,8 +66,8 @@ If you just use  regular Markdown, the other bundle may  be sufficient. But if
 you use MultiMarkdown, I believe you'll find this version to be indispensable.
 
 
-
 # Features #
+
 
 ## Metadata ##
 
@@ -87,11 +90,13 @@ you use MultiMarkdown, I believe you'll find this version to be indispensable.
   snippet approach is that you can tab between all of the values to easily
   make changes.
 
+
 ## Headers ##
 
 * you can use a keystroke to increase or decrease the level of the header
 * hitting enter automatically adds trailing #'s to the header and skips some
   space
+
 
 ## Lists ##
 
@@ -99,10 +104,12 @@ you use MultiMarkdown, I believe you'll find this version to be indispensable.
 * convert from numbered to unnumbered list with a keystroke
 * clean up the spacing of your list automatically with a single keystroke
 
+
 ## Blockquotes ##
 
 * hitting return automatically starts the next line with the proper level of ">"
 * use a keystroke to increase or decrease quote level
+
 
 ## Tables ##
 
@@ -113,6 +120,7 @@ you use MultiMarkdown, I believe you'll find this version to be indispensable.
 ## Text Formatting ##
 
 Key commands to toggle italics and bold
+
 
 ## Completions ##
 
@@ -127,6 +135,7 @@ Automatically complete:
 * autocomplete image filenames located in same folder as your document
 * autocomplete BibTeX cite keys from .bib files located in the same folder as 
   your document
+
 
 ## Document Conversion ##
 
@@ -146,12 +155,15 @@ blank line in order  to differentiate it from the metadata  that will be added
 automatically.  If this  doesn't make  sense, just  stick with  previewing the
 entire document until it does. ;)
 
+
 ## Image Preview ##
 
 Thanks to a suggestion from Andrew Nanton, images now work properly when XHTML
 is previewed within TextMate.
 
+
 # Limitations #
+
 
 ## Language Grammar ##
 
