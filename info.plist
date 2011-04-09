@@ -22,6 +22,7 @@
 		<string>DB5085DA-3E95-4020-8521-C9702168F160</string>
 		<string>E57A1B41-D70E-44C9-9512-45026C0A32F2</string>
 		<string>F05719F8-89F2-48F0-88F6-8CFAEEF5BA91</string>
+		<string>D9118E94-4E23-4B75-88D7-6BFEBAA70D1B</string>
 	</array>
 	<key>description</key>
 	<string>&lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt; allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML. This bundle provides preview functionality, syntax highlighting, and several useful commands.  Improved support for &lt;a href="http://fletcherpenney.net/multimarkdown/"&gt;MultiMarkdown&lt;/a&gt; has been added.</string>
@@ -171,10 +172,7 @@
 		<string>724FCFF6-CE6B-11D9-9C17-000A95C0F626</string>
 		<string>9F73CBC1-E9C0-41A4-891F-B2879A1852F7</string>
 		<string>67EB96A4-4213-42C9-9C47-B886A4B8AC93</string>
-		<string>D9118E94-4E23-4B75-88D7-6BFEBAA70D1B</string>
-		<string>14199AC7-CF55-404F-B035-A0F88E7F6141</string>
-		<string>2E520800-167A-4D3F-99F1-750EBEFCF8BA</string>
-		<string>24C61FC2-E62A-4CA2-BC52-579DB7C560B3</string>
+		<string>C92636B7-8795-4CE4-8F0B-0F2EB200CAA1</string>
 		<string>351451DE-C1A4-4A36-A563-99AF761D026B</string>
 		<string>CAC8BE7C-78DD-489B-97F8-2EF8D896F91C</string>
 		<string>7CCF064C-BC8F-437B-A339-0E2156D8B2C3</string>
@@ -220,13 +218,13 @@
 		<string>146B2643-D903-49A8-9586-BE9C509D65B1</string>
 		<string>C2DBC2F2-D859-4B35-A38E-244927A8447F</string>
 		<string>C02A37C1-E770-472F-A13E-358FF0C6AD89</string>
-<<<<<<< HEAD
 		<string>6D74AB8C-1903-4EB5-B0B6-AF16527F131C</string>
 		<string>4A05D483-795D-4B71-8537-3417B8450AD8</string>
 		<string>48600DF2-8E98-40C0-9FBD-D9B50EE73633</string>
 		<string>7A27A176-318B-403F-9228-D40B55CC6E85</string>
-=======
->>>>>>> cc4ef59499ed74845b48f3f5f2d3d1751189c4e2
+		<string>C70F0881-D108-47B1-A06F-09C74954E5C2</string>
+		<string>FD6FBB48-68DF-4EFB-9A66-2C109E9FCA7E</string>
+		<string>9BF17F3B-B5E1-4F8A-A422-1A5413D4AD75</string>
 	</array>
 	<key>uuid</key>
 	<string>D99E8C0C-792F-11D9-A212-000D93B3A10E</string>

@@ -5,27 +5,21 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string># Use the mmd_merge.pl script to compile multiple documents into one MMD source
-
-# The document must be saved first, in order for the script to find the referenced documents
-
-# Requires that MultiMarkdown-Support be installed
-
-cd "${TM_FILEPATH%/*}"
-
-"${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}/Utilities/mmd_merge.pl"
+	<string>multimarkdown -t opml
 </string>
+	<key>fallbackInput</key>
+	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^M</string>
+	<string>^O</string>
 	<key>name</key>
-	<string>MMD Merge Document / Selection</string>
+	<string>Convert MMD to OPML</string>
 	<key>output</key>
 	<string>openAsNewDocument</string>
 	<key>scope</key>
 	<string>text.html.markdown.multimarkdown</string>
 	<key>uuid</key>
-	<string>CAC8BE7C-78DD-489B-97F8-2EF8D896F91C</string>
+	<string>FD6FBB48-68DF-4EFB-9A66-2C109E9FCA7E</string>
 </dict>
 </plist>

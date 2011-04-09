@@ -5,34 +5,28 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string># Process the MultiMarkdown document and convert to an RTF
-# Now uses hand crafted XSLT to generate better RTF output
-
-cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
-cd bin
+	<string>cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
+cd XSLT
 
 # Use the new, incomplete XSLT to generate properly coded RTF documents.
 # NOTE - ALL FEATURES ARE NOT COMPLETE YET!!!
 
-./mmd2RTF.pl  
+xsltproc -nonet -novalid opml2mmd.xslt -
 
-# Alternatively, use the old approach - use textutil to convert HTML to RTF.
-
-# ./multimarkdown2RTF.pl 
 </string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^R</string>
+	<string>^O</string>
 	<key>name</key>
-	<string>Convert Document / Selection to RTF in new window</string>
+	<string>Convert OPML to MMD</string>
 	<key>output</key>
 	<string>openAsNewDocument</string>
 	<key>scope</key>
-	<string>text.html.markdown.multimarkdown</string>
+	<string>text.xml</string>
 	<key>uuid</key>
-	<string>2E520800-167A-4D3F-99F1-750EBEFCF8BA</string>
+	<string>9BF17F3B-B5E1-4F8A-A422-1A5413D4AD75</string>
 </dict>
 </plist>
