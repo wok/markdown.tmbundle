@@ -7,11 +7,11 @@
 	<key>command</key>
 	<string># Process the MultiMarkdown document into ODF
 
-mkdir /tmp/TextMate 2&gt;/dev/null
 
-multimarkdown -t odf &gt; /tmp/TextMate/output.fodt
-open /tmp/TextMate/output.fodt
+TEMPFILE=`/usr/bin/mktemp -t TextMate.fodt | sed 's/\.[^.]*$//'` || exit 1
 
+multimarkdown -t odf &gt; $TEMPFILE
+open $TEMPFILE
 </string>
 	<key>fallbackInput</key>
 	<string>document</string>
