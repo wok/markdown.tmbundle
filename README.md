@@ -39,10 +39,12 @@ Variable `TM_MULTIMARKDOWN_PATH` to match  your installation directory --- for
 example, `/Users/yourname/Library/Application Support/MultiMarkdown`.
 
 If you are using MultiMarkdown 3.0, you probably need to add `/usr/local/bin`
-to your `PATH` variable in the TextMate preferences. Of course, you need a
-working installation of MultiMarkdown. A few of the more advanced features
-require that you also install the `MultiMarkdown-Support` package, but the
-basics work without it.
+to your `PATH` variable in the TextMate preferences. If you don't this, you
+will see an error message about the multimarkdown command not being found.
+
+Of course, you need a working installation of MultiMarkdown. A few of the more
+advanced features require that you also install the `MultiMarkdown-Support`
+package, but the basics work without it.
 
 You can also install my MultiMarkdown TextMate [theme] as well.
 
