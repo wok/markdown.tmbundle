@@ -7,12 +7,11 @@
 	<key>command</key>
 	<string># Process the MultiMarkdown document and open in browser
 
-mkdir /tmp/TextMate
+TEMPFILE=`/usr/bin/mktemp -t TextMate.html | sed 's/\.[^.]*$//'` || exit 1
 
-cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
-cd bin
-multimarkdown &gt;  /tmp/TextMate/output.html
-open /tmp/TextMate/output.html</string>
+
+multimarkdown &gt;  $TEMPFILE
+open $TEMPFILE</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>

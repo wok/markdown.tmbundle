@@ -5,11 +5,11 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
+	<string># Requires MultiMarkdown-Support be installed
+
+cd "${TM_MULTIMARKDOWN_PATH:-$HOME/Library/Application Support/MultiMarkdown}"
 cd XSLT
 
-# Use the new, incomplete XSLT to generate properly coded RTF documents.
-# NOTE - ALL FEATURES ARE NOT COMPLETE YET!!!
 
 xsltproc -nonet -novalid opml2mmd.xslt -
 

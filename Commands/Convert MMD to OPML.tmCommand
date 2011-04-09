@@ -14,7 +14,7 @@
 	<key>keyEquivalent</key>
 	<string>^O</string>
 	<key>name</key>
-	<string>Convert MMD to OPML</string>
+	<string>Convert Document / Selection to OPML</string>
 	<key>output</key>
 	<string>openAsNewDocument</string>
 	<key>scope</key>
