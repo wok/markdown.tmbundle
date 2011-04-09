@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string># Process the MultiMarkdown document into LaTeX, and then
+# Process the LaTeX into a PDF
+
+# Requires that the document be saved first
+
+# This may or may not work for your file, and is not "officially"
+# supported.
+
+# Use at your own risk
+
+
+cd "${TM_FILEPATH%/*}"
+
+mmd2pdf "${TM_FILEPATH}"
+
+open sample.pdf
+</string>
+	<key>fallbackInput</key>
+	<string>document</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>^P</string>
+	<key>name</key>
+	<string>Convert Document to PDF</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>text.html.markdown.multimarkdown</string>
+	<key>uuid</key>
+	<string>4F20AFC6-53B0-4789-8007-8FC84F2B1874</string>
+</dict>
+</plist>
