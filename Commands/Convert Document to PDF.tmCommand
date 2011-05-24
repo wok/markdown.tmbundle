@@ -20,14 +20,13 @@ cd "${TM_FILEPATH%/*}"
 
 mmd2pdf "${TM_FILEPATH}"
 
-open sample.pdf
-</string>
+open "${TM_FILEPATH%.*}.pdf"</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>
-	<string>^P</string>
+	<string>^~@p</string>
 	<key>name</key>
 	<string>Convert Document to PDF</string>
 	<key>output</key>
