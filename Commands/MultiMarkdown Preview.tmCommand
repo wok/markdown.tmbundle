@@ -9,22 +9,17 @@
 	<key>command</key>
 	<string># Process the MultiMarkdown document and display as a web page
 
+content=`cat`
+content="CSS: $TM_BUNDLE_SUPPORT/css/taikala.css
 
-# This really should go after xml declaration, but
-# TM seems ok with it
+${content}"
 
-if [[ -f "$TM_FILEPATH" ]]; then
-  echo "&lt;base href='tm-file://${TM_FILEPATH// /%20}'&gt;"
-fi
-
-
-multimarkdown</string>
+cd "${TM_FILEPATH%/*}"
+echo "${content}" | multimarkdown </string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
-	<key>keyEquivalent</key>
-	<string>^~@p</string>
 	<key>name</key>
 	<string>Preview</string>
 	<key>output</key>

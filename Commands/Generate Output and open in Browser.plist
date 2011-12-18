@@ -7,17 +7,22 @@
 	<key>command</key>
 	<string># Process the MultiMarkdown document and open in browser
 
-TEMPFILE=`/usr/bin/mktemp -t TextMate.html | sed 's/\.[^.]*$//'` || exit 1
+cd "${TM_FILEPATH%/*}"
+
+content=`cat`
+content="CSS: $TM_BUNDLE_SUPPORT/css/taikala.css
+${content}"
 
 
-multimarkdown &gt;  $TEMPFILE
-open $TEMPFILE</string>
+echo "${content}" | multimarkdown &gt; ${TM_FILEPATH%.*}.html
+
+open ${TM_FILEPATH%.*}.html</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^@p</string>
+	<string>@r</string>
 	<key>name</key>
 	<string>Generate Output and Open in Browser</string>
 	<key>output</key>
