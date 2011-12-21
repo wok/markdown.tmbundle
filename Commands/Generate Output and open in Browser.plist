@@ -7,16 +7,7 @@
 	<key>command</key>
 	<string># Process the MultiMarkdown document and open in browser
 
-cd "${TM_FILEPATH%/*}"
-
-content=`cat`
-content="CSS: $TM_BUNDLE_SUPPORT/css/taikala.css
-${content}"
-
-
-echo "${content}" | multimarkdown &gt; ${TM_FILEPATH%.*}.html
-
-open ${TM_FILEPATH%.*}.html</string>
+"${TM_BUNDLE_SUPPORT}/bin/make_html.sh"</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
@@ -26,7 +17,7 @@ open ${TM_FILEPATH%.*}.html</string>
 	<key>name</key>
 	<string>Generate Output and Open in Browser</string>
 	<key>output</key>
-	<string>discard</string>
+	<string>showAsTooltip</string>
 	<key>scope</key>
 	<string>text.html.markdown.multimarkdown</string>
 	<key>uuid</key>

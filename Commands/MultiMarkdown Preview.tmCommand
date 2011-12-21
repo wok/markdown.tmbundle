@@ -20,6 +20,8 @@ echo "${content}" | multimarkdown </string>
 	<string>document</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@R</string>
 	<key>name</key>
 	<string>Preview</string>
 	<key>output</key>
